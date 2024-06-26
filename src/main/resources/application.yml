@@ -12,8 +12,8 @@ spring:
     # DBMS dialect setting
     database-platform: org.hibernate.dialect.MariaDB106Dialect
     hibernate:
-      # ddl ??? ??? ????..none ?? update
-      ddl-auto: create
+      # ddl ??? ??? ????..none ?? update create
+      ddl-auto: update
     properties:
       hibernate:
         format_sql: true # SQL ?? ??? ??? ??

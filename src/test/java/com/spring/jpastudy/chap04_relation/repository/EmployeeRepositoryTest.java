@@ -23,7 +23,7 @@ class EmployeeRepositoryTest {
     @Autowired
     DepartmentRepository departmentRepository;
 
-//        @BeforeEach
+    //    @BeforeEach
     void beforeInsert() {
 
         Department d1 = Department.builder()
@@ -81,6 +81,11 @@ class EmployeeRepositoryTest {
         //then
         System.out.println("\n\n\n");
         System.out.println("employee = " + employee);
+        System.out.println("\n\n\n");
+
+        Department department = employee.getDepartment();
+        System.out.println("\n\n\n");
+        System.out.println("department = " + department);
         System.out.println("\n\n\n");
     }
 
